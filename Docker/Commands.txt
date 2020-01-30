@@ -1,0 +1,8 @@
+Build an image from a docker file:
+
+docker build -t flask-app:latest .
+
+Mapping of Port 5000 to 8080:
+docker run -d -p 5000:8080 flask-app
+
+So, when we hit the URL using port 5000 on the browser, the request is redirected to 8080.
